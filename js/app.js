@@ -42,13 +42,13 @@ const seattle ={
 
     },
 
-    listCookiesInHtml: function(){
+   /*: function(){
         let container = document.getElementById('body');
         let h2 = document.createElement('h2');
         container.appendChild(h2); 
         h2.textContent = this.locationName;
 
-    }
+    }*/
 
 
 
@@ -57,9 +57,9 @@ seattle.getRandomInt(23,65);
 seattle.numOfCookies();
 console.log(seattle.calCookies);
 seattle.totalNumOfCookies();
-console.log(seattle.totalCookies);
+//console.log(seattle.totalCookies);
 
-seattle.listCookiesInHtml();
+//seattle.listCookiesInHtml();
 
 
 
