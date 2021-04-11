@@ -1,6 +1,7 @@
 'use strict';
 
 const seattle ={
+    locationName: 'settle',
     min: 23,
     max: 65,
     avg: 6.3,
@@ -39,6 +40,14 @@ const seattle ={
         console.log(this.totalCookies);
         
 
+    },
+
+    listCookiesInHtml: function(){
+        let container = document.getElementById('body');
+        let h2 = document.createElement('h2');
+        container.appendChild(h2); 
+        h2.textContent = this.locationName;
+
     }
 
 
@@ -49,6 +58,8 @@ seattle.numOfCookies();
 console.log(seattle.calCookies);
 seattle.totalNumOfCookies();
 console.log(seattle.totalCookies);
+
+seattle.listCookiesInHtml();
 
 
 
