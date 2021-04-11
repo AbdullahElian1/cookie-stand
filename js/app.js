@@ -83,7 +83,7 @@ seattle.listCookiesInHtml();
 
 const tokyo ={
     locationName: 'tokyo',
-    min: 11,
+    min: 3,
     max: 24,
     avg: 1.2,
     cusNum: [],
@@ -152,7 +152,7 @@ const tokyo ={
 
 
 };
-tokyo.getRandomInt(11,24);
+tokyo.getRandomInt(3,24);
 tokyo.numOfCookies();
 console.log(tokyo.calCookies);
 tokyo.totalNumOfCookies();
@@ -232,7 +232,7 @@ const dubai ={
 
 
 };
-dubai.getRandomInt(11,24);
+dubai.getRandomInt(11,38);
 dubai.numOfCookies();
 console.log(dubai.calCookies);
 dubai.totalNumOfCookies();
@@ -312,13 +312,93 @@ const paris ={
 
 
 };
-paris.getRandomInt(11,24);
+paris.getRandomInt(20,38);
 paris.numOfCookies();
 console.log(paris.calCookies);
 paris.totalNumOfCookies();
 console.log(paris.totalCookies);
 
 paris.listCookiesInHtml();
+
+
+const lima ={
+    locationName: 'lima',
+    min: 2,
+    max: 16,
+    avg: 4.6,
+    cusNum: [],
+    calCookies:[],
+    totalCookies:0,
+
+
+    getRandomInt: function (min, max) {
+        for(let i =0; i<=13; i++){
+        min = Math.ceil(min);
+        max = Math.floor(max);
+       let x= Math.floor(Math.random() * (max - min) + min); 
+       this.cusNum.push(x);
+
+
+        }
+        console.log(this.cusNum);
+    },
+
+    numOfCookies: function(){
+        for(let i=0; i<this.cusNum.length; i++)
+        {
+
+            this.calCookies.push(Math.ceil(this.cusNum[i]* this.avg));
+            
+            
+        }
+
+    },
+
+    totalNumOfCookies: function(){
+        for(let i=0; i<this.calCookies.length; i++){
+            this.totalCookies += this.calCookies[i];
+            
+            
+
+        }
+        console.log(this.totalCookies);
+       
+        
+
+    },
+
+    listCookiesInHtml: function(){
+        let container = document.getElementById('body');
+        let h2 = document.createElement('h2');
+        container.appendChild(h2); 
+        h2.textContent = this.locationName;
+        let ul = document.createElement('ul');
+        container.appendChild(ul);
+        let li = null;
+        for(let i = 0 ; i < this.calCookies.length ; i++){
+            li = document.createElement('li');
+            ul.appendChild(li);
+            
+            li.textContent = `${hours[i]}: ${this.calCookies[i]} Cookies`;
+        }
+        li = document.createElement('li');
+            ul.appendChild(li);
+            li.textContent = `Tootal: ${this.totalCookies} Cookies`;
+
+
+
+    }
+
+
+
+};
+lima.getRandomInt(2,16);
+lima.numOfCookies();
+console.log(lima.calCookies);
+lima.totalNumOfCookies();
+console.log(lima.totalCookies);
+
+lima.listCookiesInHtml();
 
 
 
