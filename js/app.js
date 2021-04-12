@@ -95,7 +95,7 @@ const tokyo ={
         for(let i =0; i<=13; i++){
         min = Math.ceil(min);
         max = Math.floor(max);
-       let x= Math.floor(Math.random() * (max - min) + min); 
+       let x= Math.floor(Math.random() * (max - min + 1) + min); 
        this.cusNum.push(x);
 
 
