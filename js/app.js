@@ -1,5 +1,8 @@
 'use strict';
 let hours= ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm','3pm','4pm','5pm','6pm','7pm'];
+function randomValue(min, max) { 
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
 
 const seattle ={
     locationName: 'settle',
@@ -11,12 +14,10 @@ const seattle ={
     totalCookies:0,
 
 
-    getRandomInt: function (min, max) {
+    getRandomInt: function () {
         for(let i =0; i<=13; i++){
-        min = Math.ceil(min);
-        max = Math.floor(max);
-       let x= Math.floor(Math.random() * (max - min) + min); 
-       this.cusNum.push(x);
+            this.cusNum.push(randomValue(this.min,this.max));
+        
 
 
         }
@@ -24,28 +25,22 @@ const seattle ={
     },
 
     numOfCookies: function(){
+        let c=0;
         for(let i=0; i<this.cusNum.length; i++)
         {
-
-            this.calCookies.push(Math.ceil(this.cusNum[i]* this.avg));
-            
-            
+            c= Math.ceil(this.cusNum[i]* this.avg);
+            this.totalCookies += c;
+            this.calCookies.push(c);
+             
         }
+        console.log( this.calCookies);
+
+        console.log( this.totalCookies);
+
 
     },
 
-    totalNumOfCookies: function(){
-        for(let i=0; i<this.calCookies.length; i++){
-            this.totalCookies += this.calCookies[i];
-            
-            
-
-        }
-        console.log(this.totalCookies);
-       
-        
-
-    },
+    
 
     listCookiesInHtml: function(){
         let container = document.getElementById('body');
@@ -74,8 +69,8 @@ const seattle ={
 };
 seattle.getRandomInt(23,65);
 seattle.numOfCookies();
-console.log(seattle.calCookies);
-seattle.totalNumOfCookies();
+//console.log(seattle.calCookies);
+//seattle.totalNumOfCookies();
 console.log(seattle.totalCookies);
 
 seattle.listCookiesInHtml();
