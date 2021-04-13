@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*header{
+    background-color: rgb(209, 142, 142);
+    position: relative;
+}
+header h1{}
+
+    nav ul {
+        position: relative;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 20px;
+    }*/
+
+    body{
+        background-color: rgb(209, 142, 142);;
+    }
+
+    header {
+        background-color:rgb(66, 66, 66);
+        color: white;
+        height: 120px;
+    }
+    header nav{
+        float: right;
+        width: 25%;
+        margin-top: 20px;
+    
+    }
+    header h1{
+        float: left;
+        margin: 30px 0 0 1% ;
+    
+    }
+    
+    
+    header nav ul li {
+        display: inline-block;
+        margin: 30 px 20px 30px 20px;
+    
+    }
+     header nav ul li a{
+         color: white;
+         text-decoration: none;
+         margin-right:6px ;
+         font-size: 20px;
+         
+     }
+    
+     a:hover {
+        background-color: rgb(61, 113, 138);
+      }
+ .locatin{
+     
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 30px;
+     position: relative;
+     height: 400px;
+     color: white;
+ }
+ .locatin h2{
+     text-align: center;
+     padding-top: 20px;
+ }
+
+ .locatin p{
+     padding-left:10px ;
+     font-size: 20px;
+     text-align: center;
+ }
+ nav ol {
+     position:absolute;
+     left: 280px;
+ }
+ /*.locatin img{
+     position: absolute;
+     top: 105px;
+     right: 100px;
+ }*/
+ .locatin nav ol li{
+     font-size: 20px;
+     font-weight: bold;
+     color: white;
+ }
+
+ .hour{
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ .hour p{
+     text-align: center;
+     font-size: 20px;
+     color: white;
+ }
+ .hour img{
+     margin-bottom: 20px;
+ }
+
+ .food{
+     width: 70%;
+     margin-left: auto;
+     margin-right: auto;
+
+ }
+
+ .food img{
+     display: block;
+     margin: 10px;
+     padding-left: 20px;
+ }
+ .food p{
+     text-align: center;
+     font-size: 30px;
+     font-weight: bold;
+
+ }
+ footer{
+    background-color:rgb(66, 66, 66);
+    color: white;
+    height: 120px;
+    text-align: center;
+ }
+
+ footer p{
+   
+     display: inline-block;
+     padding-left: 20px;
+     
+     font-size: 20px;
+     
+     
+ }
+
+
