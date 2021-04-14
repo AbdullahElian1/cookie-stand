@@ -9,6 +9,7 @@ let arrOfobjects = [];
 
 let container = document.getElementById('body');
 let table = document.createElement('table');
+table.setAttribute("id", "T");
 headerRow();
 
 function Cookies(locationName,min, max,avg){
@@ -26,7 +27,7 @@ function Cookies(locationName,min, max,avg){
 
     
 }
-console.log(arrOfobjects);
+//console.log(arrOfobjects);
 
 
 Cookies.prototype.getRandomInt= function(){
@@ -36,7 +37,7 @@ Cookies.prototype.getRandomInt= function(){
 
 
     }
-    console.log(this.cusNum)
+    //console.log(this.cusNum)
 
 }
 
@@ -48,10 +49,11 @@ Cookies.prototype.numOfCookies= function(){
         this.totalCookies += c;
         this.calCookies.push(c);   
     }
-    console.log( this.calCookies);
+    //console.log( this.calCookies);
 
-    console.log( this.totalCookies);
+    //console.log( this.totalCookies);
 }
+
 Cookies.prototype.render=  function(){
     container.appendChild(table);
     
@@ -97,6 +99,8 @@ for(let i = 0 ; i< arrOfobjects.length; i++){
     
 }
 
+//console.log(arrOfobjects[0]);
+
  //lima.render();
 /*seattle.getRandomInt();
 seattle.numOfCookies();
@@ -126,7 +130,7 @@ function headerRow (){
     th3.textContent = "Daily Location Total";
 
 }
-footer();
+
 //console.log(arrOfobjects);
 
 
@@ -155,18 +159,60 @@ function footer (){
         
     
     }
-    console.log(finalTotal);
+    //console.log(finalTotal);
     let th2 = document.createElement('th');
     tr.appendChild(th2);
     th2.textContent= finalTotal;
     
     
 
-    /*let th3 = document.createElement('th');
-    tr.appendChild(th3);
-    th3.textContent = "Daily Location Total";*/
-
 }
+footer();
+
+
+const form = document.getElementById('cookies');
+
+form.addEventListener('submit', handleSubmitting);
+
+function handleSubmitting(event){
+    event.preventDefault(); 
+
+    console.log(event);
+
+    let loctionName =event.target.name.value;
+     console.log(loctionName);
+     let min= event.target.min.value;
+     min= parseInt(min);
+     let max= event.target.max.value;
+     max= parseInt(max); 
+     let avg = event.target.avg.value;
+     avg= parseFloat(avg);
+     //console.log(min, max, avg);
+     deleterow("T");
+
+     let newlocation= new Cookies(loctionName,min,max,avg);
+     console.log(newlocation);
+    newlocation.getRandomInt();
+    newlocation.numOfCookies();
+    newlocation.render();
+
+
+    function deleterow(tableID) {
+        let table = document.getElementById(tableID);
+        let rowCount = table.rows.length;
+        console.log(rowCount);
+    
+        table.deleteRow(rowCount -1);
+    
+    }
+    footer();
+
+    
+    
+    
+}
+
+
 
 
 
