@@ -7,7 +7,7 @@ function randomValue(min, max) {
 let arrOfobjects = [];
 
 
-let container = document.getElementById('body');
+let container = document.getElementById('sectionTable');
 let table = document.createElement('table');
 table.setAttribute("id", "T");
 headerRow();
