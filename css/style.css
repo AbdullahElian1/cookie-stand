@@ -113,7 +113,7 @@ td{
 
       input[type=submit] {
         width: 38%;
-        margin-left: 102px;
+        margin-left: 29%;
     }
         
     table{
@@ -136,7 +136,7 @@ td{
           padding: 8px;  
        }
        tr:nth-child(even){
-           background-color: #c2a3a3;}
+           background-color: #9e90c0;}
       
           table tr:hover {
               background-color: #ddd;
@@ -155,6 +155,7 @@ footer{
    background-color:rgb(253, 232, 205,0.12);
    margin-top: 30px;
    font-family: Arial, Helvetica, sans-serif;
+   
 
 
 }
