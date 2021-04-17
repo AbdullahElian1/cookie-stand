@@ -21,16 +21,30 @@ td{
   }
 
   td*/
-  body{
+
+  html { 
+    height: 100%;
+    margin:0px;
+    background: url("https://4.bp.blogspot.com/-3ANN1T9Q4Mo/VYNLKGOmTdI/AAAAAAAABsY/67l9QUTwILg/s640/La-Clare-France-101.gif") no-repeat top center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+body {
+    height: 100%;
+    margin:0px;
+}
+
+ /* body{
     background-image: url("https://4.bp.blogspot.com/-3ANN1T9Q4Mo/VYNLKGOmTdI/AAAAAAAABsY/67l9QUTwILg/s640/La-Clare-France-101.gif");
-    background-repeat: no-repeat;
+    background-repeat:no-repeat;
     width: 100%;
+    position: ;
     background-size: cover;
     height: 100%;
     margin: 0;
 
 
-  }
+  }*/
 
   header {
     background-color: rgb(253, 232, 205,0.12);
