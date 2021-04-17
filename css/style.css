@@ -114,6 +114,7 @@ td{
       input[type=submit] {
         width: 38%;
         margin-left: 29%;
+        cursor: pointer;
     }
         
     table{
@@ -121,12 +122,9 @@ td{
         border-collapse:collapse;
         width: 80%;
         font-size: 20px;
-        margin-top: 30px;
-        padding-bottom: 12px;
         padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 30px;
+        margin: 30px auto 12px auto;
+        
         
         
         }
