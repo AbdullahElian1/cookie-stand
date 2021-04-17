@@ -22,56 +22,151 @@ td{
 
   td*/
   body{
-    background-image: url("https://www.icolorpalette.com/download/solidcolorimage/eee0b1_solid_color_background_icolorpalette.png");
+    background-image: url("https://4.bp.blogspot.com/-3ANN1T9Q4Mo/VYNLKGOmTdI/AAAAAAAABsY/67l9QUTwILg/s640/La-Clare-France-101.gif");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
     height: 100%;
+    margin: 0;
 
 
   }
+
   header {
-      position: relative;
+    background-color: rgb(253, 232, 205,0.12);
+    padding: 10px;
+  }
+  .container{
+      width: 80%;
       
-
+      margin-left: auto;
+      margin-right: auto;
+      height: 60px;
   }
-   a{
-    position: absolute;
-    right: 20%;
-    top:10%;
-    text-decoration: none;
-    font-size: 20px;
-
-}
-
-  table{
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse:collapse;
-  width: 100%;
-  font-size: 20px;
-  margin-top: 30px;
   
+  #test{
+      float: left;
+      position: relative;
+      width:80%
   }
- th , td{
-    border: 1px solid #ddd;
-    padding: 8px;  
- }
- tr:nth-child(even){
-     background-color: #f2f2f2;}
 
-    table tr:hover {
-        background-color: #ddd;
+  #test img{
+    width: 7%;
+    margin: -4px;
+    
+}
+  
+  #test h1{
+      position: absolute;
+      top: -19px;
+    left: 50%;
+    font-size: 40px;
+      
+  }
+
+  .container a{
+      float: right;
+      padding-top: 26px;
+    width: 20%;
+    font-size: 19px;
+    text-decoration: none;
+
+  }
+  a:hover{
+      color: rgb(145, 81, 81);
+  }
+  
+  
+
+
+
+    #sectionTable {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(253, 232, 205,0.12);
+        border-radius: 25px;
+        min-height: 821px;
     }
 
-    table th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
+
+
+      main section div form{
+          width: 35%;
+          margin: 20px auto;
+
+      }
+      #cookies{
+        padding-top: 24px;
+      }
+
+
+
+      main section div form input{
+          padding: 12px;
+          margin-bottom: 10px;
+          width: 92%;
+          border: 2px solid rgb(69, 69, 107);
+        border-radius: 25px;
         
       }
 
-      h1{
-          text-align: center;
-          font-family: Arial, Helvetica, sans-serif;
+      input[type=submit] {
+        width: 38%;
+        margin-left: 29%;
+    }
+        
+    table{
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse:collapse;
+        width: 80%;
+        font-size: 20px;
+        margin-top: 30px;
+        padding-bottom: 12px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 30px;
+        
+        
+        }
 
-      }
+       th , td{
+        border: 2px solid rgb(69, 69, 107);
+          padding: 8px;  
+       }
+       tr:nth-child(even){
+           background-color: #9e90c0;}
+      
+          table tr:hover {
+              background-color: #ddd;
+          }
+      
+          table th {
+              padding-top: 12px;
+              padding-bottom: 12px;
+              text-align: left;
+              
+            }
+
+
+footer{
+    height: 80px;
+   background-color:rgb(253, 232, 205,0.12);
+   margin-top: 30px;
+   font-family: Arial, Helvetica, sans-serif;
+   
+
+
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 2%;
+    
+
+
+}
+      
