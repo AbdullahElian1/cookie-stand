@@ -1,26 +1,3 @@
-/*table{
-    border: 2px solid gray;
-    padding: 10px;
-    margin: 10px;
-
-}
-
-th{
-    border: 2px solid gray;
-    padding: 10px;
-    margin: 10px;
-}
-td{
-    border: 2px solid gray;
-    padding: 10px;
-    
-}*/
-/*table, th, td {
-    border: 1px solid black;
-    padding: 5px;
-  }
-
-  td*/
 
   html { 
     height: 100%;
@@ -34,17 +11,7 @@ body {
     margin:0px;
 }
 
- /* body{
-    background-image: url("https://4.bp.blogspot.com/-3ANN1T9Q4Mo/VYNLKGOmTdI/AAAAAAAABsY/67l9QUTwILg/s640/La-Clare-France-101.gif");
-    background-repeat:no-repeat;
-    width: 100%;
-    position: ;
-    background-size: cover;
-    height: 100%;
-    margin: 0;
-
-
-  }*/
+ 
 
   header {
     background-color: rgb(253, 232, 205,0.12);
